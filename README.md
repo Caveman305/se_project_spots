@@ -143,4 +143,4 @@ Fonts: Fonts user were from google fonts.
 
 ## Video recorded:
 
-https://drive.google.com/file/d/1928dXpllGcn8ajQPTkUug5ZFodVjsj9W/view?usp=drive_link
+https://drive.google.com/file/d/1ZZZHbMh4dcht30lekBrdOO3k_0skjO79/view?usp=sharing
