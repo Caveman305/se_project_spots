@@ -142,3 +142,5 @@ Icons: Icons such as the edit and like buttons are sourced from Figma.
 Fonts: Fonts user were from google fonts.
 
 ## Video recorded:
+
+https://drive.google.com/file/d/1928dXpllGcn8ajQPTkUug5ZFodVjsj9W/view?usp=drive_link
