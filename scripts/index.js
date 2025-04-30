@@ -29,4 +29,46 @@ const initalCards = [
   },
 ];
 
-console.log(initalCards);
+const editProfileBtn = document.querySelector(".profile__edit-btn");
+const editProfileModal = document.querySelector("#edit-profile-modal");
+const editProfileCloseBtn = editprofileModal.querySelector(".modal__close-btn");
+const exitProfileForm = editProfileModal.querySelector(".modal__form");
+const editProfileNameInput = editProfileModal.querySelector(
+  "#edit-profile-name-input"
+);
+const editProfileDescriptionInput = editProfileModal.querySelector(
+  "#edit-profile-description-input"
+);
+
+const newPostBtn = document.querySelector(".profile__new-post-btn");
+const newPostModal = document.querySelector("#new-post-modal");
+const newPostCloseBtn = newPostModal.querySelector(".modal__close-btn");
+
+const profileNameEl = document.querySelector(".profile__name");
+const profileDescriptionEl = document.querySelector(".profile__description");
+
+const add CardBtn = document.querySelector(".modal__add-card-btn");
+const addCardModal = document.querySelector("#add-card-modal");
+const linkInput = addCardModal.querySelector("#add-card-link-input");
+editProfileCloseBtn.addEventListener("click", function () {
+  editProfileNameInput.value = profileNameEl.textContent;
+  editProfileModal.classList.remove("modal_is-opened");
+});
+newPostBtn.addEventListener("click", function () {
+  newPostModal.classList.add("modal_is-opened");
+});
+newPostCloseBtn.addEventListener("click", function () {
+  newPostModal.classList.remove("modal_is-opened");
+});
+function handleEditProfileFormSubmit(evt) {
+  evt.preventDefult();
+  profileNameEl.textContent = editProfileNameInput.value;
+  editProfileModal.classList.remove("modal_is-opened");
+}
+function handleAddCardFormSubmit(evt) {evt.preventDefult();
+  profileNameEl.textContent = editProfileNameInput.value;
+  editProfileModal.classList.remove("modal_is-opened");
+}
+addCardFormElement.addEventListener("submit", handleAddCardFormSubmit);
+editProfileform.addEventListener("submit", handleEditProfileSubmit);
+

@@ -76,6 +76,7 @@
 
 .profile__edit-btn:hover {
   opacity: 1;
+  appearance: opacity 0.5s linear;
 }
 .profile__add-btn {
   height: 52px;
@@ -93,6 +94,7 @@
 }
 
 .profile__add-btn:hover {
+  display: blovck;
   opacity: 80%;
 }
 @media screen and (max-width: 627px) {
